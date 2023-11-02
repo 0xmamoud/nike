@@ -6,7 +6,13 @@ const Button = ({ label, iconUrl }) => {
 			font-montserrat text-lg text-white leading-none"
 		>
 			{label}
-			<img src={iconUrl} alt="icon fleche droit" className="w-5 h-5" />
+			{iconUrl && (
+				<img
+					src={iconUrl}
+					alt="icon fleche droit"
+					className="w-5 h-5"
+				/>
+			)}
 		</button>
 	);
 };
